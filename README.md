@@ -41,7 +41,7 @@ Options:\
   --help                      Show this help message and exit
 
 Environment Variables (if using --env flag):\
-  PGHOST, PGDATABASE, PGPORT, PGUSER, PGPASSWORD, PGFILE, PGOLD_SCHEMA, PGNEWSCHEMA
+  PGHOST, PGDATABASE, PGPORT, PGUSER, PGPASSWORD, PSQL_PATH, PGDUMP_PATH
 
 ## Examples:
   Export the database schema:
