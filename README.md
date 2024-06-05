@@ -14,7 +14,7 @@ Use case for `pgclone` is for easy copy and transformation of postgresql schemas
 
 ## .env file
 
-Update the included .env file with your own parameters or pass flags on command line
+Update the included [.env file](https://github.com/tonylturner/pgclone/blob/main/.env) with your own parameters or pass flags on command line
 
 ## Command line options
 
