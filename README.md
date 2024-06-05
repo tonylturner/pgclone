@@ -18,7 +18,7 @@ Update the included [.env file](https://github.com/tonylturner/pgclone/blob/main
 
 ## Command line options
 
-Usage: ./pgclone.sh [OPTIONS]\
+Usage: ./pgclone.sh [OPTIONS]
 
 Options:\
   -e, --export                Export the database schema\
