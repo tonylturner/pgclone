@@ -46,9 +46,12 @@ Environment Variables (if using --env flag):\
 ## Examples:
   Export the database schema:
 
+    ```bash
     ./pgclone.sh --export --host localhost --dbname mydb --port 5432 --user myuser --password mypassword --file mydb_dump.sql
-
+    ```
+    ```bash
     ./pgclone.sh --export --env .env --file mydb_dump.sql
+    ```
 
   Export a specific schema from the database:
 
