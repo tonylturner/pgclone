@@ -38,23 +38,28 @@ Options:\
 Environment Variables (if using --env flag):\
   PGHOST, PGDATABASE, PGPORT, PGUSER, PGPASSWORD, PGFILE, PGOLD_SCHEMA, PGNEWSCHEMA\
 
-Examples:\
+## Examples:\
   Export the database schema:\
+
     ./pgclone.sh --export --host localhost --dbname mydb --port 5432 --user myuser --password mypassword --file mydb_dump.sql\
     ./pgclone.sh --export --env .env --file mydb_dump.sql\
 
   Export a specific schema from the database:\
+
     ./pgclone.sh --export-schema my_schema --host localhost --dbname mydb --port 5432 --user myuser --password mypassword --file mydb_dump.sql\
     ./pgclone.sh --export-schema my_schema --env .env --file mydb_dump.sql\
 
   List all schemas in the database:\
+
     ./pgclone.sh --list-schemas --host localhost --dbname mydb --port 5432 --user myuser --password mypassword\
     ./pgclone.sh --list-schemas --env .env\
 
   Transform the SQL file:\
+
     ./pgclone.sh --transform --file mydb_dump.sql --oldschema old_schema --newschema new_schema\
     ./pgclone.sh --transform --env .env --file mydb_dump.sql --oldschema old_schema --newschema new_schema\
 
   Import the database schema:\
+  
     ./pgclone.sh --import --host localhost --dbname mydb --port 5432 --user myuser --password mypassword --file mydb_dump.sql\
     ./pgclone.sh --import --env .env --file mydb_dump.sql\
