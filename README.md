@@ -66,7 +66,7 @@ Environment Variables (if using --env flag):\
 
     ./pgclone.sh --transform --file mydb_dump.sql --oldschema old_schema --newschema new_schema
 
-    ./pgclone.sh --transform --env .env --file mydb_dump.sql --oldschema old_schema --newschema new_schema\
+    ./pgclone.sh --transform --env .env --file mydb_dump.sql --oldschema old_schema --newschema new_schema
 
   Import the database schema:
 
