@@ -1,15 +1,20 @@
 # pgclone
-BASH wrapper for pg_dump and psql
+BASH wrapper for postgresql pg_dump and psql
 
 ## Features
 
 Use case for `pgclone` is for easy copy and transformation of postgresql schemas
 
-- List schemas
+- supports .env file for parameters
+- list schemas
 - dump database schema
 - dump specific schema
 - transform .sql file to update with new schema
 - import new schema
+
+## .env file
+
+Update the included .env file with your own parameters or pass flags on command line
 
 ## Command line options
 
@@ -66,5 +71,5 @@ Environment Variables (if using --env flag):\
   Import the database schema:\
 
     ./pgclone.sh --import --host localhost --dbname mydb --port 5432 --user myuser --password mypassword --file mydb_dump.sql\
-    
+
     ./pgclone.sh --import --env .env --file mydb_dump.sql\
