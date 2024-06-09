@@ -6,3 +6,10 @@
 
 # Ignore SQL files
 *.sql
+
+# evidence
+./reports/*
+./evidence/*
+
+# Ignore .env
+.env
